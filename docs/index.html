@@ -14,7 +14,8 @@
         <link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
 
         <link rel="stylesheet" href="dist/styles/main.css">
-
+        <link rel="stylesheet" href="dist/styles/customstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;900&display=swap" rel="stylesheet">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
         <script>
          window.dataLayer = window.dataLayer || [];
@@ -25,15 +26,15 @@
         </script>
     </head>
     <body>
-        <div class="o-scroll" id="js-scroll" data-scroll-container>
+        <div class="o-scroll" id="js-scroll" data-scroll-container >
 
             <div data-scroll-section>
-                <div class="o-container">
+                <div class="o-container home-portada" >
                     <header class="c-header" id="header">
                         <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
                             <div class="o-layout">
                                 <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-position="top" data-scroll-target="#header">
-                                    <span class="u-label c-header_heading_label">
+                                    <span class="u-label c-header_heading_label  u-white">
                                         <a href="/">
                                             LOVILL
                                         </a>
@@ -48,65 +49,38 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="c-header_title o-h1" data-scroll>
-                            <span class="c-header_title_line -version u-white">
-                                <span class="o-h1 " data-scroll data-scroll-speed="4" data-scroll-position="top" data-scroll-delay="0.05">Lawyers with a global reputation</span>
-                            </span>
+                        <h1 class="c-header_title o-h1 vertical" data-scroll>
+                            <div class="o-layout_item" data-scroll data-scroll-direction="vertical" data-scroll-speed="-9" data-scroll-position="top" data-scroll-target="#header">
+                                <div class="u-text-right  -version u-white">
+                                    <p class="u-label c-header_heading_label texto-portada">
+                                        Lawyers with a global reputation
+                                    </p>
+                                </div>
+                            </div>
                         </h1>
                     </header>
-                    <span class="c-speed-block_bubble -right -bottom" data-scroll data-scroll-speed="1" data-scroll-call="dynamicColor" data-scroll-repeat data-scroll-delay="0.05">
-                        scroll down
-                    </span>
                     
+                    <span class="c-speed-block_bubble -right -bottom serif-right" data-scroll data-scroll-speed="1" data-scroll-call="dynamicColor" data-scroll-repeat data-scroll-delay="0.05">
+                        Scroll Down
+                    </span>
                 </div>
             </div>
-            <section data-scroll-section>
-                <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat>
-                    scroll down
-                </span>
-                <div class="o-container">
+            
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container ">
+                    <span class="c-speed-block_bubble -left .c-summary_text-bottom serif-left" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat></span>
                     <div class="c-summary" data-scroll data-scroll-offset="100">
-                        <div class="o-layout -gutter">
+                        <div class="o-layout -gutter -right">
                             <div class="o-layout_item u-2/5@from-medium">
                                 <p class="c-summary_text">
                                     A simple scroll library used by developers at Locomotive. Built as a layer on top of <em>ayamflow's</em> <a href="https://github.com/ayamflow/virtual-scroll" target="_blank">virtual-scroll</a>, it provides smooth scrolling with support for parallax effects, toggling classes, and triggering event listeners when elements are in the viewport.
                                 </p>
                             </div>
-                            <div class="o-layout_item u-3/5@from-medium">
-                                <ul class="c-summary_list">
-                                    <li class="c-summary_list_item u-label" data-scroll>
-                                        <a href="#speed-control" data-scroll-to>
-                                            01. Speed Control
-                                            <span class="c-summary_list_icon u-icon">
-                                                ↓
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="c-summary_list_item u-label" data-scroll>
-                                        <a href="#scroll-direction" data-scroll-to>
-                                            02. Scroll direction
-                                            <span class="c-summary_list_icon u-icon">
-                                                ↓
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="c-summary_list_item u-label" data-scroll>
-                                        <a href="#lerp-effect" data-scroll-to>
-                                            03. Lerp effect
-                                            <span class="c-summary_list_icon u-icon">
-                                                ↓
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="c-summary_list_item u-label" data-scroll>
-                                        <a href="#fixed-elements" data-scroll-to>
-                                            04. Fixed Elements
-                                            <span class="c-summary_list_icon u-icon">
-                                                ↓
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="o-layout_item u-2/5@from-medium">
+                                <p class="c-summary_text">
+                                    A simple scroll library used by developers at Locomotive. Built as a layer on top of <em>ayamflow's</em> <a href="https://github.com/ayamflow/virtual-scroll" target="_blank">virtual-scroll</a>, it provides smooth scrolling with support for parallax effects, toggling classes, and triggering event listeners when elements are in the viewport.
+                                </p>
                             </div>
                         </div>
                     </div>

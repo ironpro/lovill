@@ -7,6 +7,12 @@
     color: $white;
 }
 
+// Colors
+.u-white a{
+    color: $white;
+    text-shadow: 1px 1px 0px #00000040;
+}
+
 // Text / font
 .u-label {
     @include u-label;

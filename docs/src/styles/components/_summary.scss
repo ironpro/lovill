@@ -1,10 +1,10 @@
 .c-summary {
     margin: rem($unit) 0 rem($unit * 2) 0;
+    margin-top: 450px;
 }
 
 .c-summary_text {
-    font-size: rem(18px);
-    font-weight: $semi-bold;
+    font-size: rem(12px);
     opacity: 0;
     transform: translateY(60px);
     transition: transform 1s $easing;

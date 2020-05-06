@@ -18,13 +18,13 @@
 }
 
 .c-header_title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: rem($unit-small) 0;
+    padding: 2.5rem 0;
     perspective: 600px;
     -webkit-perspective: 600px;
+    height: initial;
+    display: flex;
+    height: inherit;
+    align-items: center;
 }
 
 .c-header_line {
@@ -35,10 +35,6 @@
     margin: 0;
     transform: scaleX(0);
     transition: transform 0.6s $easing;
-
-    &.is-inview {
-        transform: scaleX(1)
-    }
 }
 
 .c-header_title_line {

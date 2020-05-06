@@ -1,0 +1,39 @@
+.home-portada{
+   background-image: url('../images/portada.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+
+.texto-portada{
+    text-transform: none;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 300;
+    margin-top: -150px;
+}
+
+.serif-right{
+    background-image: url('../images/serifright.png');
+    width: 282.804px ;
+    height: 377.958px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    color: #25232A !important;
+    font-weight: 400;
+    font-size: small;
+    top:80% !important;
+}
+
+.serif-left{
+    background-image: url('../images/serifleft.png');
+    width: 282.804px ;
+    height: 377.958px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    color: #25232A !important;
+    font-weight: 400;
+    font-size: small;
+    top:80% !important;
+}
