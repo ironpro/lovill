@@ -1,6 +1,9 @@
 .c-section {
     position: relative;
-
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
     @media (max-width: $to-large) {
         padding-bottom: 10vh;
         margin-bottom: 10vh;

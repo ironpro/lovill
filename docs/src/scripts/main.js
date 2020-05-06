@@ -24,13 +24,13 @@ import LocomotiveScroll from '../../../src/locomotive-scroll';
         scroll.on('scroll', (instance) => {
             const progress = 360 * instance.scroll.y / instance.limit;
 
-            scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
+            //scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
 
             dynamicBackgrounds.forEach(obj => {
-                obj.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
+                //obj.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
             });
             dynamicColorElements.forEach(obj => {
-                obj.el.style.color = `hsl(${progress}, 11%, 81%)`;
+                //obj.el.style.color = `hsl(${progress}, 11%, 81%)`;
             });
 
             document.documentElement.setAttribute('data-direction', instance.direction)

@@ -785,7 +785,6 @@ h6, .o-h6 {
   transform: translateY(-50%); }
 
 .o-scroll {
-  background-color: #d4c9c9;
   overflow: hidden; }
 
 .o-title {
@@ -1001,8 +1000,7 @@ html {
   margin-bottom: 3.75rem; }
 
 .c-summary {
-  margin: 3.75rem 0 7.5rem 0;
-  margin-top: 450px; }
+  padding: 3.75rem 0 7.5rem 0; }
 
 .c-summary_text {
   font-size: 0.75rem;
@@ -1093,7 +1091,11 @@ html {
     transition-delay: 1.1s; }
 
 .c-section {
-  position: relative; }
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; }
   @media (max-width: 1199px) {
     .c-section {
       padding-bottom: 10vh;

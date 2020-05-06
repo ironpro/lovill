@@ -6,10 +6,11 @@
 
 .texto-portada{
     text-transform: none;
-    text-align: center;
+    text-align: left;
     font-size: 6rem;
     font-weight: 300;
     margin-top: -150px;
+    margin-left: 10%;
 }
 
 .serif-right{
@@ -36,4 +37,15 @@
     font-weight: 400;
     font-size: small;
     top:80% !important;
+}
+
+.segunda-seccion{
+    background-color: #F1E9E3;
+}
+
+.textos-segunda-seccion{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
