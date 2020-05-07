@@ -108,6 +108,7 @@
     margin-top: 24px;
     padding-left: 10px;
     color: #5D5D5D;
+    font-size: 24px;
 }
 .foto-recortada{
     overflow: hidden;
@@ -119,9 +120,17 @@
     display: grid;
 }
 .texto-team{
-    margin-top: 16px;
-    margin-bottom: 24px;
+    margin-top: 36px;
+    margin-bottom: 124px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 24px;
+}
+
+.back-cuchuflo{
+    background-image: url('../images/cuchuflo.svg');
+    width: 100vw;
+    min-height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
