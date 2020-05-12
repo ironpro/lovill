@@ -2012,7 +2012,7 @@
       var dynamicBackgrounds = [];
       var dynamicColorElements = [];
       scroll.on('scroll', function (instance) {
-        var progress = 360 * instance.scroll.y / instance.limit; //scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
+        var progress = parseInt(360 * instance.scroll.y / instance.limit); //scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
         document.documentElement.setAttribute('data-direction', instance.direction);
       });
       scroll.on('call', function (value, way, obj) {
