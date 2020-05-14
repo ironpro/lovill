@@ -57,12 +57,15 @@
 .tercera-seccion {
   padding: 0;
   margin: 0;
-  height: auto; }
+  height: 135vh;
+  position: relative;
+  display: block; }
 
 .cuarta-seccion {
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  height: 2000px;
+  padding: 0;
+  margin: 0; }
 
 .quinta-seccion {
   width: 100vw;
@@ -165,8 +168,6 @@
 
 .back-cuchuflo {
   background-image: url("../images/cuchuflo.svg");
-  width: 100vw;
-  height: 1293.91px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -462,7 +463,7 @@
     transform: scale(1.2); } }
 
 .sec-firstpart {
-  height: 43.6vh;
+  height: 200px;
   text-align: left;
   display: flex;
   align-items: center;
@@ -476,7 +477,6 @@
     font-size: 24px;
     display: block;
     width: 100%;
-    margin: 18px;
     color: #5D5D5D; }
 
 .sec-secondpart {
@@ -487,8 +487,25 @@
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding-top: 32px;
-  flex-grow: 1; }
+  padding-top: 24px;
+  height: 800px;
+  flex-grow: 1;
+  position: relative; }
+
+.awardsContainer {
+  position: relative;
+  height: 50vh; }
+
+#awardsText1, #awardsText2, #awardsText3 {
+  opacity: 0;
+  position: absolute;
+  top: 220px; }
+
+#awardsLogo1, #awardsLogo2, #awardsLogo3 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 112px; }
 
 .chambers-text {
   margin: 41px auto;

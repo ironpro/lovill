@@ -2012,8 +2012,61 @@
       var dynamicBackgrounds = [];
       var dynamicColorElements = [];
       scroll.on('scroll', function (instance) {
-        var progress = parseInt(360 * instance.scroll.y / instance.limit); //scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
+        var progress = 360 * instance.scroll.y / instance.limit; //scroll.el.style.backgroundColor = `hsl(${progress}, 11%, 81%)`;
         document.documentElement.setAttribute('data-direction', instance.direction);
+        var awards = document.getElementById("awards");
+        var awardsHeight = awards.getBoundingClientRect().height * -1;
+        var awardsTop = awards.getBoundingClientRect().top;
+        console.log(progress); //if(awardsTop < 100 && awardsHeight < awardsTop ){
+
+        if (progress > 150 && progress < 16.66 + 150) {
+          console.log("primer  animacion");
+          document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo3").style.opacity = "0";
+          document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo2").style.opacity = "0";
+          document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo1").style.opacity = "1";
+          document.getElementById("awardsText3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText3").style.opacity = "0";
+          document.getElementById("awardsText2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText2").style.opacity = "0";
+          document.getElementById("awardsText1").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText1").style.opacity = "1";
+        }
+
+        if (progress > 16.66 + 150 && progress < 33.33 + 150) {
+          console.log("segunda animacion");
+          document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo3").style.opacity = "0";
+          document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo1").style.opacity = "0";
+          document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo2").style.opacity = "1";
+          document.getElementById("awardsText3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText3").style.opacity = "0";
+          document.getElementById("awardsText3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText1").style.opacity = "0";
+          document.getElementById("awardsText2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText2").style.opacity = "1";
+        }
+
+        if (progress > 33.33 + 150) {
+          console.log("tercer animacion");
+          document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo1").style.opacity = "0";
+          document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo2").style.opacity = "0";
+          document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsLogo3").style.opacity = "1";
+          document.getElementById("awardsText1").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText1").style.opacity = "0";
+          document.getElementById("awardsText2").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText2").style.opacity = "0";
+          document.getElementById("awardsText3").style.transition = "opacity 1s ease-out";
+          document.getElementById("awardsText3").style.opacity = "1";
+        } //}
+
       });
       scroll.on('call', function (value, way, obj) {
         if (value === 'dynamicBackground') {

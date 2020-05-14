@@ -127,7 +127,7 @@
                                 <span class="super-left-line ">A dedicated team of professionals lawyer</span>
                             </p>
                         </div> 
-                        <div class="o-layout_item u-2/5@from-medium"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" data-scroll-position="bottom">
+                        <div class="o-layout_item u-1/5@from-medium"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1" data-scroll-position="top">
                             <p class="texto-team">
                                 We take pride for being a pioneer in implementing a custom-made knowledge management system (intelligent checklists, workflow systems, document assembly, and Intranet), which allows attorneys in all units to work more efficiently focusing on what really matters to the client: legal work, efficiency and strategy they can trust.
                             </p>
@@ -135,37 +135,48 @@
                     </div>
                 </div>
             </section>
-            <section class="c-section cuarta-seccion back-cuchuflo" data-scroll-section>
-                <div class="cuchuflo-container">
-                    <div class="o-container ">
-                        <div class="o-layout -center">
-                            <div class="o-layout_item u-1/5@from-large" data-scroll data-scroll-direction="vertical" data-scroll-speed="0" data-scroll-position="top">
+            <section class="c-section cuarta-seccion" data-scroll-section>
+                <div class="cuchuflo-container" id="fixed-awards" >
+                    <div class="o-container " style="width: 100vw;padding: 0;">
+                        <div class="o-layout -center ">
+                            <div class="o-layout_item  u-1/5@from-large back-cuchuflo" data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" data-scroll-position="top" data-scroll-sticky data-scroll-target="#fixed-awards" data-scroll-offset="0%,-100%">
                                 <p class="sec-firstpart" >
                                     <span class="sec-title">
                                         Schedule a virtual meeting with us
                                     </span> 
                                     Contact us to schedule an appointment and get to know us, we will study your case and we will propose you the best solution.
                                 </p>
-                            </div>
-                            <div class="o-layout_item u-1/5@from-large" data-scroll data-scroll-direction="vertical" data-scroll-speed=0" data-scroll-position="top">
-                                <div class="sec-secondpart">
-                                    <div>
-                                        <div class="o-layout_item u-1/5@from-medium ">
-                                            <p class="mini-title">
-                                                Awards
-                                            </p>
-                                            <h2 class="o-h2 title">
-                                                Our strengths and<br> our achievements
-                                            </h2>   
+                                <div class="sec-secondpart" id="awards" data-scroll=""  data-scroll-call="awardscall" data-scroll-delay="2">
+                                    <div class="seccion1-awards">
+                                        <div>
+                                            <div class="o-layout_item u-1/5@from-medium " data-scroll-target="fixed-awards" data-scroll-sticky="">
+                                                <p class="mini-title">
+                                                    Awards 
+                                                </p>
+                                                <h2 class="o-h2 title">
+                                                    Our strengths and<br> our achievements
+                                                </h2>   
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <img src="dist/images/chamberslogo.png" alt="">
-                                    </div>
-                                    <div class="chambers-text">
-                                        <p>"Provided a very good and knowledgeable working environment, exceeding all our expectations"</p>
-                                        <p class="name">Chamber Global</p>        
-                                    </div>
+                                        <div class="awardsContainer chambers-text">
+                                                <img src="dist/images/chamberslogo.png" alt="" id="awardsLogo1" />
+                                                <img src="dist/images/05-team-Ana_Carolina_UA.jpg" alt="" id="awardsLogo2" />
+                                                <img src="dist/images/06-team-Alejandro_FM.jpg" alt="" id="awardsLogo3" />
+                                                <div id="awardsText1">
+                                                    <p>"Provided a very good and knowledgeable working environment, exceeding all our expectations"</p>
+                                                    <p class="name">Chamber Global</p>        
+                                                </div>
+                                                <div id="awardsText2">
+                                                    <p>"Proactivity, shrewdness and highly strategic approach"</p>
+                                                    <p class="name">Chamber latam</p>        
+                                                </div>
+                                                <div id="awardsText3">
+                                                    <p>"Great capability to solve legal inquiries and hardships within the processes of mergers and acquisitions"</p>
+                                                    <p class="name">Legal 500</p>        
+                                                </div>
+
+                                        </div>
+                                    </div>       
                                 </div>
                             </div>
                         </div>
