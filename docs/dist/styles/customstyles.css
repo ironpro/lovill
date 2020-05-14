@@ -157,7 +157,7 @@
 .texto-team {
   margin-top: 36px;
   margin-bottom: 124px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Verdana";
   font-size: 20px;
   line-height: 24px; }
 
@@ -167,7 +167,7 @@
   margin-bottom: 40px; }
 
 .back-cuchuflo {
-  background-image: url("../images/cuchuflo.svg");
+  background-image: url("../images/cuchuflo-02.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
