@@ -59,17 +59,20 @@
   margin: 0;
   height: 135vh;
   position: relative;
-  display: block; }
+  display: block;
+  background: #f1f6f4; }
 
 .cuarta-seccion {
   width: 100vw;
-  height: 2000px;
+  height: 2077px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background: #ededed; }
 
 .quinta-seccion {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 100px; }
 
 .sexta-seccion {
   width: 100vw;
@@ -86,7 +89,7 @@
   padding-bottom: 60px;
   margin-bottom: 0 !important;
   overflow: hidden;
-  max-height: 100vh; }
+  max-height: 150vh; }
 
 .textos-segunda-seccion {
   display: block;
@@ -161,16 +164,36 @@
   font-size: 20px;
   line-height: 24px; }
 
+.back-firstpart-schedule {
+  background: #efd0b8; }
+
 .cuchuflo-container {
   display: flex;
   flex-direction: row;
   margin-bottom: 40px; }
 
 .back-cuchuflo {
-  background-image: url("../images/cuchuflo-02.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.schedule {
+  display: flex;
+  flex-direction: row; }
+  .schedule a {
+    margin-left: 80px;
+    background: white;
+    color: #646464;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px;
+    min-width: 224px;
+    margin-top: -4px;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .slider {
   position: relative;
@@ -185,246 +208,320 @@
   position: absolute; }
 
 .slide1 {
-  -webkit-animation: cycle 12s infinite;
-  animation: cycle 12s infinite; }
+  -webkit-animation: cycle 20s infinite;
+  animation: cycle 20s infinite; }
 
 .slide2 {
-  -webkit-animation: cycletwo 12s infinite;
-  animation: cycletwo 12s infinite; }
+  -webkit-animation: cycletwo 20s infinite;
+  animation: cycletwo 20s infinite; }
 
 .slide3 {
-  -webkit-animation: cyclethree 12s infinite;
-  animation: cyclethree 12s infinite; }
+  -webkit-animation: cyclethree 20s infinite;
+  animation: cyclethree 20s infinite; }
 
 .slide4 {
-  -webkit-animation: cyclefour 12s infinite;
-  animation: cyclefour 12s infinite; }
+  -webkit-animation: cyclefour 20s infinite;
+  animation: cyclefour 20s infinite; }
 
 .slide5 {
-  -webkit-animation: cyclefive 12s infinite;
-  animation: cyclefive 12s infinite; }
+  -webkit-animation: cyclefive 20s infinite;
+  animation: cyclefive 20s infinite; }
+
+.slide6 {
+  -webkit-animation: cyclesix 20s infinite;
+  animation: cyclesix 20s infinite; }
+
+.slide7 {
+  -webkit-animation: cycleseven 20s infinite;
+  animation: cycleseven 20s infinite; }
 
 @-webkit-keyframes cycle {
   0% {
-    transform: scale(1.2); }
-  /* When you start the slide, the first image is already visible */
-  4% { }
-  /* Original Position */
-  16% {
     opacity: 1;
-    z-index: 0; }
-  /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% {
+    transform: scale(1.2); }
+  8.3333% {
+    opacity: 1; }
+  16.6666% {
     opacity: 0;
-    z-index: 0; }
-  /* From 16% to 20% = for 1 second exit image */
-  21% {
-    opacity: 0;
-    z-index: -1; }
-  /* Return to Original Position */
-  92% {
-    opacity: 0;
-    z-index: 0; }
-  96% {
-    opacity: 0; }
-  /* From 96% to 100% = for 1 second enter image*/
+    transform: scale(1); }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 1; } }
+    opacity: 0; } }
 
 @keyframes cycle {
   0% {
-    transform: scale(1.2); }
-  /* When you start the slide, the first image is already visible */
-  4% { }
-  /* Original Position */
-  16% {
     opacity: 1;
-    z-index: 0; }
-  /* From 4% to 16 % = for 3 seconds the image is visible */
-  20% {
+    transform: scale(1.2); }
+  8.3333% {
+    opacity: 1; }
+  16.6666% {
     opacity: 0;
-    z-index: 0; }
-  /* From 16% to 20% = for 1 second exit image */
-  21% {
-    opacity: 0;
-    z-index: -1; }
-  /* Return to Original Position */
-  92% {
-    opacity: 0;
-    z-index: 0; }
-  96% {
-    opacity: 0; }
-  /* From 96% to 100% = for 1 second enter image*/
+    transform: scale(1); }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 1; } }
+    opacity: 0; } }
 
 @-webkit-keyframes cycletwo {
   0% {
     opacity: 0;
     transform: scale(1.2); }
-  /* Original Position */
-  16% {
+  8.3333% {
     opacity: 0; }
-  /* Starts moving after 16% to this position */
-  20% {
+  16.6666% {
     opacity: 1;
-    transform: scale(1); }
-  24% {
-    opacity: 1; }
-  /* From 20% to 24% = for 1 second enter image*/
-  36% {
-    opacity: 1;
-    z-index: 0;
     transform: scale(1.2); }
-  /* From 24% to 36 % = for 3 seconds the image is visible */
-  40% {
+  24.9999% {
+    opacity: 1; }
+  33.3333% {
     opacity: 0;
-    z-index: 0; }
-  /* From 36% to 40% = for 1 second exit image */
-  41% {
-    opacity: 0;
-    z-index: -1; }
-  /* Return to Original Position */
+    transform: scale(1); }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1); } }
+    opacity: 0; } }
 
 @keyframes cycletwo {
   0% {
     opacity: 0;
     transform: scale(1.2); }
-  /* Original Position */
-  16% {
+  8.3333% {
     opacity: 0; }
-  /* Starts moving after 16% to this position */
-  20% {
+  16.6666% {
     opacity: 1;
-    transform: scale(1); }
-  24% {
-    opacity: 1; }
-  /* From 20% to 24% = for 1 second enter image*/
-  36% {
-    opacity: 1;
-    z-index: 0;
     transform: scale(1.2); }
-  /* From 24% to 36 % = for 3 seconds the image is visible */
-  40% {
+  24.9999% {
+    opacity: 1; }
+  33.3333% {
     opacity: 0;
-    z-index: 0; }
-  /* From 36% to 40% = for 1 second exit image */
-  41% {
-    opacity: 0;
-    z-index: -1; }
-  /* Return to Original Position */
+    transform: scale(1); }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1); } }
+    opacity: 0; } }
 
 @-webkit-keyframes cyclethree {
   0% {
     opacity: 0;
     transform: scale(1.2); }
-  36% {
-    opacity: 0;
-    transform: scale(1); }
-  40% {
-    opacity: 1;
-    transform: scale(1); }
-  44% {
-    opacity: 1; }
-  56% {
+  8.3333% { }
+  16.6666% { }
+  24.9999% {
+    opacity: 0; }
+  33.3333% {
     opacity: 1;
     transform: scale(1.2); }
-  60% {
+  41.6666% {
+    opacity: 1; }
+  49.9999% {
     opacity: 0;
-    z-index: 0; }
-  61% {
-    opacity: 0;
-    z-index: -1; }
+    transform: scale(1); }
+  58.3333% {
+    opacity: 0; }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1.2); } }
+    opacity: 0; } }
 
 @keyframes cyclethree {
   0% {
     opacity: 0;
     transform: scale(1.2); }
-  36% {
-    opacity: 0;
-    transform: scale(1); }
-  40% {
-    opacity: 1;
-    transform: scale(1); }
-  44% {
-    opacity: 1; }
-  56% {
+  8.3333% { }
+  16.6666% { }
+  24.9999% {
+    opacity: 0; }
+  33.3333% {
     opacity: 1;
     transform: scale(1.2); }
-  60% {
+  41.6666% {
+    opacity: 1; }
+  49.9999% {
     opacity: 0;
-    z-index: 0; }
-  61% {
-    opacity: 0;
-    z-index: -1; }
+    transform: scale(1); }
+  58.3333% {
+    opacity: 0; }
+  66.6666% { }
+  74.9999% { }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1.2); } }
+    opacity: 0; } }
 
 @-webkit-keyframes cyclefour {
   0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% {
     opacity: 0; }
-  56% {
-    opacity: 0; }
-  60% {
+  49.9999% {
+    opacity: 1;
+    transform: scale(1.2); }
+  58.3333% {
+    opacity: 1; }
+  66.6666% {
     opacity: 1;
     transform: scale(1); }
-  64% {
-    opacity: 1; }
-  76% {
-    opacity: 1;
-    z-index: 0;
-    transform: scale(1.2); }
-  80% {
-    opacity: 0;
-    z-index: 0; }
-  81% {
-    opacity: 0;
-    z-index: -1; }
+  74.9999% {
+    opacity: 0; }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1); } }
+    opacity: 0; } }
 
 @keyframes cyclefour {
   0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% {
     opacity: 0; }
-  56% {
-    opacity: 0; }
-  60% {
+  49.9999% {
+    opacity: 1;
+    transform: scale(1.2); }
+  58.3333% {
+    opacity: 1; }
+  66.6666% {
     opacity: 1;
     transform: scale(1); }
-  64% {
-    opacity: 1; }
-  76% {
-    opacity: 1;
-    z-index: 0;
-    transform: scale(1.2); }
-  80% {
-    opacity: 0;
-    z-index: 0; }
-  81% {
-    opacity: 0;
-    z-index: -1; }
+  74.9999% {
+    opacity: 0; }
+  83.3333% { }
+  91.6666% { }
   100% {
-    opacity: 0;
-    z-index: -1;
-    transform: scale(1); } }
+    opacity: 0; } }
 
 @-webkit-keyframes cyclefive {
+  0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% {
+    opacity: 0; }
+  66.6666% {
+    opacity: 1;
+    transform: scale(1.2); }
+  74.9999% {
+    opacity: 1; }
+  83.3333% {
+    opacity: 1;
+    transform: scale(1); }
+  91.6666% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes cyclefive {
+  0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% {
+    opacity: 0; }
+  66.6666% {
+    opacity: 1;
+    transform: scale(1.2); }
+  74.9999% {
+    opacity: 1; }
+  83.3333% {
+    opacity: 1;
+    transform: scale(1); }
+  91.6666% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes cyclesix {
+  0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% {
+    opacity: 0; }
+  83.3333% {
+    opacity: 1;
+    transform: scale(1.2); }
+  91.6666% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes cyclesix {
+  0% {
+    opacity: 0;
+    transform: scale(1.2); }
+  8.3333% { }
+  16.6666% { }
+  24.9999% { }
+  33.3333% { }
+  41.6666% { }
+  49.9999% { }
+  58.3333% { }
+  66.6666% { }
+  74.9999% {
+    opacity: 0; }
+  83.3333% {
+    opacity: 1;
+    transform: scale(1.2); }
+  91.6666% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@-webkit-keyframes cycleseven {
   0% {
     opacity: 0;
     transform: scale(1); }
@@ -434,7 +531,7 @@
     opacity: 1; }
   84% {
     opacity: 1;
-    transform: scale(1); }
+    transform: scale(1.2); }
   96% {
     opacity: 1;
     z-index: 0; }
@@ -443,7 +540,7 @@
     z-index: 0;
     transform: scale(1.2); } }
 
-@keyframes cyclefive {
+@keyframes cycleseven {
   0% {
     opacity: 0;
     transform: scale(1); }
@@ -453,7 +550,7 @@
     opacity: 1; }
   84% {
     opacity: 1;
-    transform: scale(1); }
+    transform: scale(1.2); }
   96% {
     opacity: 1;
     z-index: 0; }
@@ -464,19 +561,17 @@
 
 .sec-firstpart {
   height: 200px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 45VW;
-  margin: auto; }
+  width: 70VW;
+  margin-left: auto;
+  padding-top: 30px;
+  margin-right: 70px; }
   .sec-firstpart .sec-title {
     font-family: 'Verdana';
     font-weight: 300;
     font-size: 24px;
     display: block;
     width: 100%;
+    margin-bottom: 20px;
     color: #5D5D5D; }
 
 .sec-secondpart {
@@ -499,7 +594,8 @@
 #awardsText1, #awardsText2, #awardsText3 {
   opacity: 0;
   position: absolute;
-  top: 220px; }
+  top: 220px;
+  margin-top: 20px; }
 
 #awardsLogo1, #awardsLogo2, #awardsLogo3 {
   opacity: 0;
@@ -509,6 +605,7 @@
 
 .chambers-text {
   margin: 41px auto;
+  margin-top: 20px;
   max-width: 492px;
   font-family: 'Verdana';
   font-weight: 100;
@@ -549,8 +646,8 @@
       margin-bottom: 16px; }
 
 .backAnimado img {
-  min-width: 5000px;
+  min-width: 2200px;
   position: absolute;
-  top: -50vh;
-  left: -35vw;
+  top: -30.5vh;
+  left: -17vw;
   z-index: 50; }

@@ -77,11 +77,8 @@ const transform = (element, x, y, delay) => {
             const awardsTop = awards.getBoundingClientRect().top
             const awardsHeight1 = awardsHeight / 3
             const awardsHeight2 = (awardsHeight / 3) * 2
-
-            console.log(progress)
             //if(awardsTop < 100 && awardsHeight < awardsTop ){
                 if(progress > 150 && progress < (16.66 + 150) ){
-                    console.log("primer  animacion")
                     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
                     document.getElementById("awardsLogo3").style.opacity = "0"
                     document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
@@ -96,7 +93,6 @@ const transform = (element, x, y, delay) => {
                     document.getElementById("awardsText1").style.opacity = "1"
                 }
                 if(progress > (16.66 + 150) && progress < (33.33 + 150)){
-                    console.log("segunda animacion")
                     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
                     document.getElementById("awardsLogo3").style.opacity = "0"
                     document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
@@ -111,7 +107,6 @@ const transform = (element, x, y, delay) => {
                     document.getElementById("awardsText2").style.opacity = "1"
                 }
                 if(progress > (33.33 + 150)){
-                    console.log("tercer animacion")
                     document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
                     document.getElementById("awardsLogo1").style.opacity = "0"
                     document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
