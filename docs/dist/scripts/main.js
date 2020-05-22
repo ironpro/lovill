@@ -2061,6 +2061,27 @@
           document.getElementById("awardsText2").style.opacity = "0";
           document.getElementById("awardsText3").style.transition = "opacity 1s ease-out";
           document.getElementById("awardsText3").style.opacity = "1";
+        }
+
+        if (progress > 315) {
+          var pos = progress - 300;
+          var logo = document.getElementById("logoAnimado");
+          var back = document.getElementById("backAnimado");
+          var logoSizes = logo.getBoundingClientRect();
+          var backSizes = back.getBoundingClientRect();
+          logo.style.transition = "0.51s ease-out";
+          back.style.transition = "0.51s ease-out";
+          var posXlogo = logoSizes.width / 2;
+          var posYlogo = logoSizes.height / 2;
+          var posXback = document.body.getBoundingClientRect().width / 2.3;
+          var posYback = backSizes.height / 1.6;
+
+          if (pos <= 50) {
+            logo.style.top = "calc(".concat(pos, "vh - ").concat(posYlogo, "px)");
+            logo.style.left = "calc(".concat(pos, "vw - ").concat(posXlogo, "px)");
+            back.style.bottom = "calc(".concat(pos, "vh - ").concat(posYback, "px)");
+            back.style.right = "calc(".concat(pos, "vw - ").concat(posXback, "px)");
+          }
         } //}
 
       });

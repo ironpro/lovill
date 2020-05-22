@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="dist/styles/main.css">
         <link rel="stylesheet" href="dist/styles/customstyles.css">
+        <link rel="stylesheet" href="dist/styles/breakpoints.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;900&display=swap" rel="stylesheet">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
         <script>
@@ -29,6 +30,7 @@
         <div class="o-scroll" id="js-scroll" data-scroll-container >
             <div data-scroll-section>
                 <div class="o-container home-portada" >
+                    <video class="videoback" id="video" src="dist/videos/lovillvideoback.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>
                     <header class="c-header" id="header">
                         <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
                             <div class="o-layout">
@@ -75,7 +77,6 @@
             </div>
             <section class="c-section segunda-seccion" data-scroll-section>
                 <div class="o-container " id="#text-portada">
-                    <span class="c-speed-block_bubble -left .c-summary_text-bottom serif-left" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat></span>
                     <div class="c-summary textos-segunda-seccion" data-scroll>
                         <div class="o-layout -gutter -right" data-scroll-target="#text-portada">
                             <div class="o-layout_item u-1/2@from-medium"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="0" data-scroll-position="bottom">
@@ -93,6 +94,7 @@
                 </div>
             </section>
             <section class="c-section tercera-seccion" data-scroll-section>
+                <span class="c-speed-block_bubble -left .c-summary_text-top serif-left" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat data-scroll-offset="0" ></span>
                 <div class="o-container" id="lerp-effect">
                     <div class="o-layout -center">
                         <div class="o-layout_item u-1/5@from-medium ">
@@ -126,12 +128,13 @@
                             </div>
                         </div>
                         <div class="o-layout_item u-1/5@from-medium"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-position="bottom">
-                            <p style="margin-right: 0; margin-left: auto;">
-                                <span class="super-left-line ">A dedicated team of professionals lawyer</span>
+                            <p class="team-title-dedicated">
+                                <span class="super-left-line "></span> 
+                                A dedicated team of professionals lawyer
                             </p>
                         </div> 
-                        <div class="o-layout_item u-1/2@from-medium"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1"  data-scroll-position="top">
-                            <p class="texto-team">
+                        <div class="o-layout_item u-1/5@from-medium"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1"  data-scroll-position="top">
+                            <p class=" o-layout_item u-2/5@from-medium texto-team">
                                 We take pride for being a pioneer in implementing a custom-made knowledge management system (intelligent checklists, workflow systems, document assembly, and Intranet), which allows attorneys in all units to work more efficiently focusing on what really matters to the client: legal work, efficiency and strategy they can trust.
                             </p>
                         </div>
@@ -152,7 +155,7 @@
                                             Schedule a virtual meeting with us
                                         </span> 
                                         <div class="schedule">
-                                            Contact us to schedule an appointment and get to know us, we will study your case and we will propose you the best solution.
+                                            Contact us to schedule an appointment and get to know us,<br> we will study your case and we will propose you the best solution.
                                             <a>schedule a meeting</a>
                                         </div>
                                     </div>
@@ -189,12 +192,12 @@
                                         </div>
                                     </div>       
                                 </div>
-                                <div style="position: absolute; right: 0;; bottom: -320px ; width: 423px; height: 645px;">
-                                    <img src="dist/images/font-shape-2.svg" alt="">
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="position: absolute; right: 0;; bottom: -3px ; width: 423px; height: 645px;">
+                    <img src="dist/images/font-shape-2.svg" alt="">
                 </div>
             </section> 
             <section class="c-section quinta-seccion" data-scroll-section>
@@ -209,7 +212,7 @@
                             <div class="o-layout_item u-2/5@from-medium ">
                                 <div class="c-section_infos is-inview" data-scroll="" data-scroll-speed="4" data-scroll-call="test" style="margin: 0; padding: 0; margin-left: auto;" >
                                     <div class="c-section_infos_inner is-inview" data-scroll="" data-scroll-position="top">
-                                        <div class="c-sections_infos_text u-text"  >
+                                        <div class="c-sections_infos_text u-text" style="margin-top: 100px;" >
                                             <p style="text-align: left;">
                                                 LOVILL chooses its clients based in core values that we share with providers, clients and team. Trust and ethical business values are essential for us.
                                             </p>
@@ -220,14 +223,8 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                                     </div>
                                 </div>
                             </div>
-                            <div class="o-layout_item u-3/5@from-medium">
-                                <div class="c-speed-block is-inview" data-scroll="" data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 7.9, 0, 1);">
-                                    <div class="o-image_wrapper is-inview" data-scroll="" data-scroll-call="dynamicBackground" data-scroll-repeat="" style="background-color: rgb(212, 208, 201);">
-                                        <div class="o-image is-inview" data-scroll="">
-                                            <img class="c-speed-block_image" src="dist/images/23509.jpg" alt="Locomotive image from unsplash">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="o-layout_item u-3/5@from-medium" data-scroll="" data-scroll-speed="2">
+                                <video id="video" src="dist/videos/LOVILLWEB10S(1).mp4" loop="true" muted="muted" autoplay type="video/mp4" style="width: 100%;"></video>
                             </div>
                         </div>
                     </div>
@@ -242,14 +239,8 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                             </h2>   
                         </div>
                         <div class="o-layout -gutter">
-                            <div class="o-layout_item u-3/5@from-medium">
-                                <div class="c-speed-block is-inview" data-scroll="" data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 7.9, 0, 1);">
-                                    <div class="o-image_wrapper is-inview" data-scroll="" data-scroll-call="dynamicBackground" data-scroll-repeat="" style="background-color: rgb(212, 208, 201);">
-                                        <div class="o-image is-inview" data-scroll="">
-                                            <img class="c-speed-block_image" src="dist/images/23509.jpg" alt="Locomotive image from unsplash">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="o-layout_item u-3/5@from-medium"   data-scroll="" data-scroll-speed="2">
+                                <video id="video" src="dist/videos/LOVILLWEB10S(4).mp4" loop="true" muted="muted" autoplay type="video/mp4" style="width: 100%;"></video>
                             </div>
                             <div class="o-layout_item u-2/5@from-medium">
                                 <div class="c-section_infos is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-call="test" >
@@ -268,13 +259,17 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                 </div>
             </section>     
             <section class="c-section septima-seccion "  data-scroll-section >
-                <div class="o-container"  id="fixed-elements">
+                <!-- 
                     <div class="logoanimado" id="logoanimado" data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" data-scroll-position="top" data-scroll-sticky data-scroll-target="#fixed-elements" data-scroll-offset="-70%">
                         <img src="dist/images/logo.svg"  alt="Lovill" width="172,9987" height="35,4067" data-scroll="" data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1"  data-scroll-offset="-85%" data-scroll-sticky data-scroll-target="#fixed-elements">
                     </div>
                     <div class="backAnimado" id="backAnimado" data-scroll="" data-scroll-direction="vertical" data-scroll-position="bottom" data-scroll-speed="20" >
                         <img src="dist/images/footerback-01-01.svg" id="footerAnimado" data-scroll="" data-scroll-direction="horizontal" data-scroll-position="bottom" data-scroll-speed="20" data-scroll-offset="85%">
                     </div>
+                -->
+                <div class="o-container" id="fixed-elements">
+                    <div class="logoanimado" id="logoAnimado"><img src="dist/images/logo.svg" alt="Lovill"></div>
+                    <div class="backAnimado" id="backAnimado"><img src="dist/images/footerback-01-01.svg" id="footerAnimado"></div>
                 </div>
                 <div class="textos-footer"  id="footer">
                     <p>
@@ -307,7 +302,8 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                     </p>  
                 </div>
 
-            </section>     
+            </section>    
+             
         </div>
 
         <script nomodule="" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>

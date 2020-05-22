@@ -41,10 +41,12 @@ const transform = (element, x, y, delay) => {
     document.documentElement.classList.remove('is-loading');
 
     
+    
 
     setTimeout(() => {
-        document.documentElement.classList.add('is-ready');
-    },300)
+        document.documentElement.classList.add('is-ready');        
+    },300);
+
 
     setTimeout(() => {
         const scroll = new LocomotiveScroll({
@@ -77,6 +79,7 @@ const transform = (element, x, y, delay) => {
             const awardsTop = awards.getBoundingClientRect().top
             const awardsHeight1 = awardsHeight / 3
             const awardsHeight2 = (awardsHeight / 3) * 2
+
             //if(awardsTop < 100 && awardsHeight < awardsTop ){
                 if(progress > 150 && progress < (16.66 + 150) ){
                     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
@@ -119,6 +122,27 @@ const transform = (element, x, y, delay) => {
                     document.getElementById("awardsText2").style.opacity = "0"
                     document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
                     document.getElementById("awardsText3").style.opacity = "1"
+                }
+                if(progress > 315){
+                    const pos = progress - 300
+                    const logo = document.getElementById("logoAnimado")
+                    const back = document.getElementById("backAnimado")
+                    const logoSizes = logo.getBoundingClientRect()
+                    const backSizes = back.getBoundingClientRect()
+                    logo.style.transition = "0.51s ease-out"
+                    back.style.transition = "0.51s ease-out"
+                    const posXlogo = logoSizes.width / 2 
+                    const posYlogo = logoSizes.height / 2
+                    const posXback = document.body.getBoundingClientRect().width / 2.3
+                    const posYback = backSizes.height / 1.6
+
+
+                    if(pos <= 50 ){
+                        logo.style.top = `calc(${pos}vh - ${posYlogo}px)`;
+                        logo.style.left = `calc(${pos}vw - ${posXlogo}px)`;
+                        back.style.bottom = `calc(${pos}vh - ${posYback}px)`;
+                        back.style.right = `calc(${pos}vw - ${posXback}px)`;
+                    }
                 }
             //}
         });

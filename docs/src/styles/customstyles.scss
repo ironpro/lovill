@@ -16,11 +16,13 @@
 
 
 .home-portada{
-    background-image: url(../images/portada.jpg);
+    //background-image: url(../images/portada.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Verdana';
 }
 
 .texto-portada{
@@ -28,6 +30,7 @@
     text-align: left;
     font-size: 6rem;
     font-weight: 300;
+    font-family: 'Roboto Slab';
     margin-left: 10%;
 }
 
@@ -54,51 +57,63 @@
     color: #25232A !important;
     font-weight: 400;
     font-size: small;
-    top:80% !important;
+    top:-10% !important;
 }
 
 .segunda-seccion{
     background-color: #F1E9E3;
+    position: relative;
     padding: 0;
     margin: 0;
+    min-height: 1000px;
+    font-family: "Verdana";
 }
 
 .tercera-seccion{
     padding: 0;
     margin: 0;
     height: 135vh;
+    min-height: 1000px;
     position: relative;
     display: block;
     background: #f1f6f4;
+    font-family: "Verdana";
 }
 .cuarta-seccion{
     width: 100vw;
     height: 2077px;
+    min-height: 2000px;
     padding: 0;
     margin: 0;
     background: #ededed;
+    font-family: "Verdana";
 }
 .quinta-seccion{
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: auto;
     margin-top: 100px;
+    font-family: "Verdana";
 }
 .sexta-seccion{
     width: 100vw;
     background-color: #F1E9E3;
     height: auto;
     padding-bottom: 60px;
+    min-height: 1000px;
     margin-bottom: 0!important;
+    font-family: "Verdana";
 }
 .septima-seccion{
     width: 110vw;
     background-color: #000000;
-    min-height: 125vh;
+    min-height: 100vh;
     height: auto;
     padding-bottom: 60px;
     margin-bottom: 0 !important;
     overflow: hidden;
     max-height: 150vh;
+    font-family: "Verdana";
 }
 
 .textos-segunda-seccion{
@@ -163,11 +178,22 @@
     margin-top: 24px;
     padding-left: 10px;
     color: #5D5D5D;
-    font-size: 24px;
+    font-size: 10px;
+    height: 6px;
+    overflow: hidden;
+    line-height: 6px;
+    vertical-align: middle;
 }
+.team-title-dedicated{
+    margin-right: 0; 
+    margin-left: 25vw; 
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: "Roboto Slab";
+}
+
 .foto-recortada{
     overflow: hidden;
-   
     margin: auto;
     margin-bottom: 100px;
 }
@@ -177,6 +203,7 @@
     font-family: "Verdana";
     font-size: 20px;
     line-height: 24px;
+    margin-left: 50vw;
 }
 
 .back-firstpart-schedule{
@@ -199,7 +226,7 @@
     display: flex;
     flex-direction: row;
     a{
-        margin-left: 80px;
+        margin: auto;
         background: white;
         color: #646464;
         cursor: pointer;
@@ -402,7 +429,8 @@
  #awardsText1, #awardsText2, #awardsText3{
     opacity: 0;
     position: absolute;
-    top: 220px;
+    text-transform: uppercase;
+    top: 360px;
     margin-top:20px;
  }
 
@@ -410,13 +438,13 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    left: 112px;
+    left: 12.5vw;
  }
 
  .chambers-text{
     margin: 41px auto;
     margin-top: 20px;
-    max-width: 492px;
+    max-width: 50vw;
     font-family: 'Verdana';
     font-weight: 100;
     font-size: 19px;
@@ -426,12 +454,21 @@
         color:#646464;
         margin-top: 20px;
      }
+     img{
+         width: 25vw;
+         margin-left: 0;
+
+     }
  }
  .logoanimado{
     position: absolute;
     top:24px;
     left: 24px;
     z-index: 11;
+    img{
+        width: 230px;
+    }
+
 }
 .textos-footer{
     text-align: center;
@@ -461,16 +498,21 @@
 }
 
 .backAnimado{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     img{
-        min-width: 2200px;
-        position: absolute;
-        top: -30.5vh;
-        left: -17vw;
-        z-index: 50;
+        min-width: 1800px;
     }
 }
 
-
+.videoback{
+    position: absolute;
+    top:0;
+    left: -16vw; 
+    width: 130vw;
+    height: 100vh;
+}
 
 // @keyframes cycle {
 //     0%  { transform: scale(1.2);} /* When you start the slide, the first image is already visible */
