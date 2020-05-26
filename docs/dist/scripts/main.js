@@ -2005,6 +2005,7 @@
       var scroll = new _default$3({
         el: document.querySelector('#js-scroll'),
         smooth: true,
+        smoothMobile: true,
         getSpeed: true,
         getDirection: true,
         useKeyboard: true
@@ -2071,8 +2072,8 @@
           var backSizes = back.getBoundingClientRect();
           logo.style.transition = "0.51s ease-out";
           back.style.transition = "0.51s ease-out";
-          var posXlogo = logoSizes.width / 2;
-          var posYlogo = logoSizes.height / 2;
+          var posXlogo = logoSizes.width / 2.3;
+          var posYlogo = logoSizes.height / 1.3;
           var posXback = document.body.getBoundingClientRect().width / 2.3;
           var posYback = backSizes.height / 1.6;
 

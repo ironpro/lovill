@@ -27,10 +27,22 @@
         </script>
     </head>
     <body>
+        <div  style="width: 100%; height: 40px; position: fixed; z-index: 1000; left: 0; top: 0; ">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+            <div class="cuatro"></div>
+            <div class="circo"></div>
+            <div class="seis"></div>
+            <div class="siete"></div>
+            <div class="ocho"></div>
+            <div class="nueve"></div>
+        </div>
         <div class="o-scroll" id="js-scroll" data-scroll-container >
-            <div data-scroll-section>
+            <div class="primera-seccion" data-scroll-section>
                 <div class="o-container home-portada" >
                     <video class="videoback" id="video" src="dist/videos/lovillvideoback.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>
+                    <video class="videobackMobile" id="video" src="dist/videos/mobileVideo.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>
                     <header class="c-header" id="header">
                         <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
                             <div class="o-layout">
@@ -41,7 +53,7 @@
                                         </a>
                                     </span>
                                 </div>
-                                <div class="o-layout_item u-1/2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top" data-scroll-target="#header">
+                                <div class="o-layout_item u-1/2 hamburger" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-position="top" data-scroll-target="#header">
                                     <div class="u-text-right">
                                         <p class="u-label c-header_heading_label">
                                             v3 – Edition
@@ -127,13 +139,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-layout_item u-1/5@from-medium"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-position="bottom">
+                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-position="bottom">
                             <p class="team-title-dedicated">
                                 <span class="super-left-line "></span> 
                                 A dedicated team of professionals lawyer
                             </p>
                         </div> 
-                        <div class="o-layout_item u-1/5@from-medium"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1"  data-scroll-position="top">
+                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1"  data-scroll-position="top">
                             <p class=" o-layout_item u-2/5@from-medium texto-team">
                                 We take pride for being a pioneer in implementing a custom-made knowledge management system (intelligent checklists, workflow systems, document assembly, and Intranet), which allows attorneys in all units to work more efficiently focusing on what really matters to the client: legal work, efficiency and strategy they can trust.
                             </p>
@@ -142,11 +154,11 @@
                 </div>
             </section>
             <section class="c-section cuarta-seccion" data-scroll-section>
-                <div class="cuchuflo-container" id="fixed-awards" >
+                <div class="cuchuflo-container" >
                     <div class="o-container " style="width: 100vw;padding: 0!important; margin: auto 0!important; max-width: 100vw;">
                         <div class="o-layout -center ">
                             <div class="o-layout_item  u-1/5@from-large back-cuchuflo" data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" data-scroll-position="top" data-scroll-sticky data-scroll-target="#fixed-awards" data-scroll-offset="20%,-100%">
-                                <div style="position: absolute;left: 0 ; top: -3px; width: 423px; height: 645px;">
+                                <div class="leftShape">
                                     <img src="dist/images/font-shape.svg" alt="">
                                 </div>
                                 <div class="back-firstpart-schedule">
@@ -154,14 +166,14 @@
                                         <span class="sec-title">
                                             Schedule a virtual meeting with us
                                         </span> 
-                                        <div class="schedule">
+                                        <div class="schedule" id="fixed-awards" >
                                             Contact us to schedule an appointment and get to know us,<br> we will study your case and we will propose you the best solution.
                                             <a>schedule a meeting</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="sec-secondpart" id="awards" data-scroll=""  data-scroll-call="awardscall" data-scroll-delay="2">
-                                    <div class="seccion1-awards">
+                                    <div class="seccion1-awards" >
                                         <div>
                                             <div class="o-layout_item u-1/5@from-medium " data-scroll-target="fixed-awards" data-scroll-sticky="">
                                                 <p class="mini-title">
@@ -196,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="position: absolute; right: 0;; bottom: -3px ; width: 423px; height: 645px;">
+                <div class="rightShape" >
                     <img src="dist/images/font-shape-2.svg" alt="">
                 </div>
             </section> 
@@ -208,11 +220,11 @@
                                 culture
                             </h2>   
                         </div>
-                        <div class="o-layout -gutter">
+                        <div class="o-layout -gutter mobile">
                             <div class="o-layout_item u-2/5@from-medium ">
                                 <div class="c-section_infos is-inview" data-scroll="" data-scroll-speed="4" data-scroll-call="test" style="margin: 0; padding: 0; margin-left: auto;" >
                                     <div class="c-section_infos_inner is-inview" data-scroll="" data-scroll-position="top">
-                                        <div class="c-sections_infos_text u-text" style="margin-top: 100px;" >
+                                        <div class="c-sections_infos_text u-text" >
                                             <p style="text-align: left;">
                                                 LOVILL chooses its clients based in core values that we share with providers, clients and team. Trust and ethical business values are essential for us.
                                             </p>
@@ -238,7 +250,7 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                                 GIVINGBACK
                             </h2>   
                         </div>
-                        <div class="o-layout -gutter">
+                        <div class="o-layout -gutter mobile">
                             <div class="o-layout_item u-3/5@from-medium"   data-scroll="" data-scroll-speed="2">
                                 <video id="video" src="dist/videos/LOVILLWEB10S(4).mp4" loop="true" muted="muted" autoplay type="video/mp4" style="width: 100%;"></video>
                             </div>

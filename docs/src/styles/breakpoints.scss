@@ -4,13 +4,225 @@
 
 @media only screen
 
-and (min-device-width: 375px)
+and (min-device-width: 320px)
 
 and (max-device-width: 667px)
 
 and (-webkit-min-device-pixel-ratio: 2)
 
 and (orientation: portrait) {
+    .uno::before{
+        content: "Portrait Mobile";
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: green;
+    }
+    .videoback{
+        display: none;
+    }
+    .videobackMobile{
+        display: block;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        height: auto;
+    }
+    // .primera-seccion{
+    //     // min-height: 50vh;
+    //     // overflow: hidden;
+    //     // width: 350px;
+    // }
+    .segunda-seccion{
+        min-height: 52vh;
+        //height: 70vh;
+    }
+    // .home-portada{
+    //     //min-height: auto;
+    // }
+    .textos-segunda-seccion {
+        width: 86vw;
+    }
+    
+    .efecto-headline-front{
+        top: -10vh;
+        height: 84.6vh;
+    }
+    .efecto-headline-back{
+        top: -35vh;
+        //height: inherit;
+    }
+    .hamburger{
+        display: none;
+    }
+    .texto-portada{
+        font-size: 55px ;
+    }
+    .c-header{
+        height: inherit;
+        min-height: inherit;
+        text-align: center;
+    }
+    // .segunda-seccion, .tercera-seccion, .cuarta-seccion, .quinta-seccion, .sexta-seccion{
+    //     //min-height: auto;
+    // }
+    
+    .cuarta-seccion{
+        height:1400px;
+        min-height:1650px;
+    }
+    .sexta-seccion{
+        min-height: auto;
+    }
+
+    .title{
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mini-title{
+        font-size: 12px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    br{display: none;}
+    .tercera-seccion{
+        min-height: 120vh;
+        height: 142vh;
+
+        .foto-recortada{
+            margin-bottom: 10px;
+        }
+        .super-left-line{
+            border-left: 10vw solid #5D5D5D;
+            margin-left: -20vw;
+            margin-top: 24px;
+            padding-left: 10px;
+            color: #5D5D5D;
+            font-size: 10px;
+            height: 6px;
+            overflow: hidden;
+            line-height: 6px;
+            vertical-align: middle;
+        }
+        .team-title-dedicated{
+            font-size: 16px;
+            margin-left: 100vw;
+        }
+        .texto-team {
+            margin-top: 36px;
+            margin-bottom: 124px;
+            font-family: "Verdana";
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+    .sexta-seccion{
+        .mobile{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+    }
+    .leftShape,
+    .rightShape{
+        width: 100px; 
+    }
+    .rightShape {
+        height: 23vh;
+    }
+    .sec-firstpart {
+        height: auto;
+        width: 65vw;
+        margin-left: auto;
+        padding-top: 30px;
+        margin-right: auto;
+        padding-bottom: 24px;
+    }
+    .sec-secondpart{
+        height: 300px;
+    }
+    .schedule {
+        flex-direction: column;
+        a {
+            margin: 24px 0;
+            width: 70%;
+        }
+    }
+    #awardsLogo1, #awardsLogo2, #awardsLogo3 {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        width: 100vw;
+    }
+    
+    #awardsText1, #awardsText2, #awardsText3 {
+        top:250px;
+    }
+
+    .chambers-text {
+        height: 250px;
+        margin: 41px auto;
+        margin-top: 20px;
+        max-width: 80vw;
+        font-family: 'Verdana';
+        font-weight: 100;
+        font-size: 18px;
+        letter-spacing: 7px;
+        line-height: 25px;
+    }
+    .c-section_infos {
+        max-width: fit-content; 
+        div{
+            padding-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+
+    }
+    .textos-footer {
+        text-align: left;
+        color: white;
+        z-index: 15;
+        position: absolute;
+        bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .backAnimado {
+        position: absolute;
+        left: -140vw;
+        bottom: 0;
+    }
+    .logoanimado {
+        position: absolute;
+        top: 20vh !important;
+        left: calc(50vw - 115px)!important;
+        z-index: 11;
+    }
+    .serif-right {
+        height: 200px;
+        right: -1px!important;
+        display: flex;
+        width: 136px;
+        top: 70vh!important;
+    }
+    .serif-left {
+        height: 200px;
+        display: flex;
+        width: 136px;
+        top: -5% !important;
+    }
+    //.seccion1-awards{}
 
 }
 
@@ -18,66 +230,96 @@ and (orientation: portrait) {
 
 @media only screen
 
-and (min-device-width: 375px)
+and (min-device-width: 320px)
 
 and (max-device-width: 667px)
 
 and (-webkit-min-device-pixel-ratio: 2)
 
 and (orientation: landscape) {
-
+    .dos::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: red;
+        content: "landscape Mobile";
+    }
 }
 
-/* ----------- Google Pixel ----------- */
 
-/* Portrait */
+@media (min-height: 800px){
 
-@media screen
+    .circo::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "840px";
+    }
+    .videobackMobile {
 
-and (device-width: 360px)
-
-and (device-height: 640px)
-
-and (-webkit-device-pixel-ratio: 3)
-
-and (orientation: portrait) {
-
+        width: 120.7vw;
+    
+    }
+    .rightShape {
+        height: 19vh;
+    }
 }
 
-/* Landscape */
-
-@media screen
-
-and (device-width: 360px)
-
-and (device-height: 640px)
-
-and (-webkit-device-pixel-ratio: 3)
-
-and (orientation: landscape) {
-
-}
 
 @media (min-width: 640px){
 
-
+    .circo::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "640px";
+    }
 
 }
 
 @media (min-width: 768px){
 
-
+    .seis::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "768px";
+    }
 
 }
 
 @media (min-width: 1024px){
+    .siete::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "1024px";
+    }
 
-
+}
+@media (min-width: 1620px){
+    .ocho::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "1620px";
+    }
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1920px){
 
-
+    .nueve::before{
+        width:100vw;
+        height:40px;
+        color:white;
+        background-color: blue;
+        content: "1920px";
+    }
 
 }

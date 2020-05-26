@@ -51,6 +51,9 @@
   font-size: small;
   top: -10% !important; }
 
+.primera-seccion {
+  background-color: #F1E9E3; }
+
 .segunda-seccion {
   background-color: #F1E9E3;
   position: relative;
@@ -127,8 +130,6 @@
   padding: 0;
   top: 0;
   padding-bottom: 0;
-  perspective: 600px;
-  -webkit-perspective: 600px;
   display: flex;
   position: absolute;
   height: 100vh;
@@ -176,6 +177,20 @@
   white-space: nowrap;
   font-size: 24px;
   font-family: "Roboto Slab"; }
+
+.leftShape {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 423px;
+  height: 645px; }
+
+.rightShape {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 423px;
+  height: 645px; }
 
 .foto-recortada {
   overflow: hidden;
@@ -688,5 +703,11 @@
   position: absolute;
   top: 0;
   left: -16vw;
-  width: 130vw;
+  height: 100vh; }
+
+.videobackMobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -16vw;
   height: 100vh; }
