@@ -702,8 +702,8 @@
 .videoback {
   position: absolute;
   top: 0;
-  left: -16vw;
-  height: 100vh; }
+  left: 0;
+  width: 100vw; }
 
 .videobackMobile {
   display: none;

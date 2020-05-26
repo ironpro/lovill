@@ -247,7 +247,10 @@ and (orientation: landscape) {
 }
 
 
-@media (min-height: 800px){
+@media (max-height: 880px)
+and (min-device-width: 320px)
+and (max-device-width: 667px)
+{
 
     .circo::before{
         width:100vw;
