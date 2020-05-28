@@ -37,12 +37,19 @@
             <div class="siete"></div>
             <div class="ocho"></div>
             <div class="nueve"></div>
+            <div class="por"></div>
         </div>
         <div class="o-scroll" id="js-scroll" data-scroll-container >
             <div class="primera-seccion" data-scroll-section>
                 <div class="o-container home-portada" >
-                    <video class="videoback" id="video" src="dist/videos/lovillvideoback.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>
-                    <video class="videobackMobile" id="video" src="dist/videos/mobileVideo.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>
+                    <!-- <video class="videoback" id="video" src="dist/videos/lovillvideoback.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video>-->
+                    <video class="videobackMobile" id="video" src="dist/videos/mobileVideo.mp4" loop="true" muted="muted" autoplay type="video/mp4"></video> 
+                    <div class="fullscreen-bg">
+                        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video vdesktop">
+                            <source src="dist/videos/lovillvideoback.mp4" type="video/mp4">
+                        </video>
+                       
+                    </div>
                     <header class="c-header" id="header">
                         <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top" data-scroll-target="#header">
                             <div class="o-layout">
@@ -139,13 +146,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1" data-scroll-position="bottom">
+                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
                             <p class="team-title-dedicated">
                                 <span class="super-left-line "></span> 
                                 A dedicated team of professionals lawyer
                             </p>
                         </div> 
-                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1"  data-scroll-position="top">
+                        <div class="o-layout_item u-1/5@from-medium mobile"  data-scroll data-scroll-direction="horizontal"  data-scroll-speed="1" >
                             <p class=" o-layout_item u-2/5@from-medium texto-team">
                                 We take pride for being a pioneer in implementing a custom-made knowledge management system (intelligent checklists, workflow systems, document assembly, and Intranet), which allows attorneys in all units to work more efficiently focusing on what really matters to the client: legal work, efficiency and strategy they can trust.
                             </p>
@@ -154,10 +161,10 @@
                 </div>
             </section>
             <section class="c-section cuarta-seccion" data-scroll-section>
-                <div class="cuchuflo-container" >
-                    <div class="o-container " style="width: 100vw;padding: 0!important; margin: auto 0!important; max-width: 100vw;">
+                <div class="cuchuflo-container"  >
+                    <div class="o-container " style="width: 100%;padding: 0!important; margin: auto 0!important; max-width: 100%;">
                         <div class="o-layout -center ">
-                            <div class="o-layout_item  u-1/5@from-large back-cuchuflo" data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" data-scroll-position="top" data-scroll-sticky data-scroll-target="#fixed-awards" data-scroll-offset="20%,-100%">
+                            <div class="o-layout_item  u-1/5@from-large back-cuchuflo">
                                 <div class="leftShape">
                                     <img src="dist/images/font-shape.svg" alt="">
                                 </div>
@@ -166,16 +173,16 @@
                                         <span class="sec-title">
                                             Schedule a virtual meeting with us
                                         </span> 
-                                        <div class="schedule" id="fixed-awards" >
+                                        <div class="schedule"  >
                                             Contact us to schedule an appointment and get to know us,<br> we will study your case and we will propose you the best solution.
                                             <a>schedule a meeting</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sec-secondpart" id="awards" data-scroll=""  data-scroll-call="awardscall" data-scroll-delay="2">
+                                <div class="sec-secondpart" id="awards" data-scroll=""  >
                                     <div class="seccion1-awards" >
                                         <div>
-                                            <div class="o-layout_item u-1/5@from-medium " data-scroll-target="fixed-awards" data-scroll-sticky="">
+                                            <div class="o-layout_item u-1/5@from-medium " >
                                                 <p class="mini-title">
                                                     Awards 
                                                 </p>
@@ -185,22 +192,34 @@
                                             </div>
                                         </div>
                                         <div class="awardsContainer chambers-text">
-                                                <img src="dist/images/chamberslogo.png" alt="" id="awardsLogo1" />
-                                                <img src="dist/images/chamberslogo2.png" alt="" id="awardsLogo2" />
-                                                <img src="dist/images/chamberslogo3.png" alt="" id="awardsLogo3" />
+                                            <div class="awards-slider1">
+                                                <img src="dist/images/awards1.svg" alt="" id="awardsLogo1" />
                                                 <div id="awardsText1">
                                                     <p>"Provided a very good and knowledgeable working environment, exceeding all our expectations"</p>
                                                     <p class="name">Chamber Global</p>        
                                                 </div>
+                                            </div>
+                                            <div class="awards-slider2">
+                                                <img src="dist/images/awards2.svg" alt="" id="awardsLogo2" />
                                                 <div id="awardsText2">
                                                     <p>"Proactivity, shrewdness and highly strategic approach"</p>
                                                     <p class="name">Chamber latam</p>        
                                                 </div>
+                                            </div>
+                                            <div class="awards-slider3">
+                                                <img src="dist/images/awards3.svg" alt="" id="awardsLogo3" />
                                                 <div id="awardsText3">
                                                     <p>"Great capability to solve legal inquiries and hardships within the processes of mergers and acquisitions"</p>
                                                     <p class="name">Legal 500</p>        
                                                 </div>
-
+                                            </div>
+                                            <div class="awards-slider4">
+                                                <img src="dist/images/awards1.svg" alt="" id="awardsLogo1" />
+                                                <div id="awardsText1">
+                                                    <p>"Provided a very good and knowledgeable working environment, exceeding all our expectations"</p>
+                                                    <p class="name">Chamber Global</p>        
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>       
                                 </div>
@@ -221,21 +240,17 @@
                             </h2>   
                         </div>
                         <div class="o-layout -gutter mobile">
-                            <div class="o-layout_item u-2/5@from-medium ">
-                                <div class="c-section_infos is-inview" data-scroll="" data-scroll-speed="4" data-scroll-call="test" style="margin: 0; padding: 0; margin-left: auto;" >
-                                    <div class="c-section_infos_inner is-inview" data-scroll="" data-scroll-position="top">
-                                        <div class="c-sections_infos_text u-text" >
-                                            <p style="text-align: left;">
-                                                LOVILL chooses its clients based in core values that we share with providers, clients and team. Trust and ethical business values are essential for us.
-                                            </p>
-                                            <p style="text-align: left;"> 
+                            <div class="o-layout_item u-2/5@from-medium " data-scroll-speed="1" >
+                                <div class=" text-styles" >
+                                    <p style="text-align: left;">
+                                        LOVILL chooses its clients based in core values that we share with providers, clients and team. Trust and ethical business values are essential for us.
+                                    </p>
+                                    <p style="text-align: left;"> 
 At LOVILL we believe in nurturing a “giving-back” environment from the top-down. We acknowledge that we have an obligation and responsability to the development and improvement of our society.
-                                            </p>
-                                        </div>
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="o-layout_item u-3/5@from-medium" data-scroll="" data-scroll-speed="2">
+                            <div class="o-layout_item u-3/5@from-medium" data-scroll="" data-scroll-speed="1" >
                                 <video id="video" src="dist/videos/LOVILLWEB10S(1).mp4" loop="true" muted="muted" autoplay type="video/mp4" style="width: 100%;"></video>
                             </div>
                         </div>
@@ -247,22 +262,18 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                     <div class="o-layout -center">
                         <div class="o-layout_item u-1/5@from-large ">
                             <h2 class="o-h2 title">
-                                GIVINGBACK
+                                GIVING<br>BACK
                             </h2>   
                         </div>
                         <div class="o-layout -gutter mobile">
-                            <div class="o-layout_item u-3/5@from-medium"   data-scroll="" data-scroll-speed="2">
+                            <div class="o-layout_item u-3/5@from-medium"   data-scroll="" data-scroll-speed="1">
                                 <video id="video" src="dist/videos/LOVILLWEB10S(4).mp4" loop="true" muted="muted" autoplay type="video/mp4" style="width: 100%;"></video>
                             </div>
                             <div class="o-layout_item u-2/5@from-medium">
-                                <div class="c-section_infos is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-call="test" >
-                                    <div class="c-section_infos_inner is-inview" data-scroll="" data-scroll-offset="200">
-                                        <div class="c-sections_infos_text u-text" style="text-align: left;">
-                                            <p>
-                                                At LOVILL we also believe in nurturing a “giving back” environment from the top-down. We acknowledge that we have an obligation and responsability to the development and improvement of our society by providing the best legal advice in commercial transactions, disputes, arbitrations or negotiations.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="text-styles" data-scroll="" data-scroll-speed="1"  style="margin: 0; padding: 0; margin-left: auto;"  >
+                                    <p style="text-align: left;">
+                                        At LOVILL we also believe in nurturing a “giving back” environment from the top-down. We acknowledge that we have an obligation and responsability to the development and improvement of our society by providing the best legal advice in commercial transactions, disputes, arbitrations or negotiations.
+                                    </p>
                                 </div>
                             </div>
                             
@@ -271,14 +282,6 @@ At LOVILL we believe in nurturing a “giving-back” environment from the top-d
                 </div>
             </section>     
             <section class="c-section septima-seccion "  data-scroll-section >
-                <!-- 
-                    <div class="logoanimado" id="logoanimado" data-scroll="" data-scroll-speed="1" data-scroll-direction="vertical" data-scroll-position="top" data-scroll-sticky data-scroll-target="#fixed-elements" data-scroll-offset="-70%">
-                        <img src="dist/images/logo.svg"  alt="Lovill" width="172,9987" height="35,4067" data-scroll="" data-scroll-direction="horizontal" data-scroll-position="top" data-scroll-speed="1"  data-scroll-offset="-85%" data-scroll-sticky data-scroll-target="#fixed-elements">
-                    </div>
-                    <div class="backAnimado" id="backAnimado" data-scroll="" data-scroll-direction="vertical" data-scroll-position="bottom" data-scroll-speed="20" >
-                        <img src="dist/images/footerback-01-01.svg" id="footerAnimado" data-scroll="" data-scroll-direction="horizontal" data-scroll-position="bottom" data-scroll-speed="20" data-scroll-offset="85%">
-                    </div>
-                -->
                 <div class="o-container" id="fixed-elements">
                     <div class="logoanimado" id="logoAnimado"><img src="dist/images/logo.svg" alt="Lovill"></div>
                     <div class="backAnimado" id="backAnimado"><img src="dist/images/footerback-01-01.svg" id="footerAnimado"></div>

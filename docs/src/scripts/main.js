@@ -74,56 +74,56 @@ const transform = (element, x, y, delay) => {
 
             document.documentElement.setAttribute('data-direction', instance.direction)
 
-            
-            const awards = document.getElementById("awards")
-            const awardsHeight = (awards.getBoundingClientRect().height * -1)
-            const awardsTop = awards.getBoundingClientRect().top
-            const awardsHeight1 = awardsHeight / 3
-            const awardsHeight2 = (awardsHeight / 3) * 2
+            console.log("progress")
+            // const awards = document.getElementById("awards")
+            // const awardsHeight = (awards.getBoundingClientRect().height * -1)
+            // const awardsTop = awards.getBoundingClientRect().top
+            // const awardsHeight1 = awardsHeight / 3
+            // const awardsHeight2 = (awardsHeight / 3) * 2
 
             //if(awardsTop < 100 && awardsHeight < awardsTop ){
-                if(progress > 150 && progress < (16.66 + 150) ){
-                    document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo3").style.opacity = "0"
-                    document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo2").style.opacity = "0"
-                    document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo1").style.opacity = "1"
-                    document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText3").style.opacity = "0"
-                    document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText2").style.opacity = "0"
-                    document.getElementById("awardsText1").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText1").style.opacity = "1"
-                }
-                if(progress > (16.66 + 150) && progress < (33.33 + 150)){
-                    document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo3").style.opacity = "0"
-                    document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo1").style.opacity = "0"
-                    document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo2").style.opacity = "1"
-                    document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText3").style.opacity = "0"
-                    document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText1").style.opacity = "0"
-                    document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText2").style.opacity = "1"
-                }
-                if(progress > (33.33 + 150)){
-                    document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo1").style.opacity = "0"
-                    document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo2").style.opacity = "0"
-                    document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsLogo3").style.opacity = "1"
-                    document.getElementById("awardsText1").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText1").style.opacity = "0"
-                    document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText2").style.opacity = "0"
-                    document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
-                    document.getElementById("awardsText3").style.opacity = "1"
-                }
+                // if(progress > 150 && progress < (16.66 + 150) ){
+                //     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo3").style.opacity = "0"
+                //     document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo2").style.opacity = "0"
+                //     document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo1").style.opacity = "1"
+                //     document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText3").style.opacity = "0"
+                //     document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText2").style.opacity = "0"
+                //     document.getElementById("awardsText1").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText1").style.opacity = "1"
+                // }
+                // if(progress > (16.66 + 150) && progress < (33.33 + 150)){
+                //     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo3").style.opacity = "0"
+                //     document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo1").style.opacity = "0"
+                //     document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo2").style.opacity = "1"
+                //     document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText3").style.opacity = "0"
+                //     document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText1").style.opacity = "0"
+                //     document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText2").style.opacity = "1"
+                // }
+                // if(progress > (33.33 + 150)){
+                //     document.getElementById("awardsLogo1").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo1").style.opacity = "0"
+                //     document.getElementById("awardsLogo2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo2").style.opacity = "0"
+                //     document.getElementById("awardsLogo3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsLogo3").style.opacity = "1"
+                //     document.getElementById("awardsText1").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText1").style.opacity = "0"
+                //     document.getElementById("awardsText2").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText2").style.opacity = "0"
+                //     document.getElementById("awardsText3").style.transition = "opacity 1s ease-out"
+                //     document.getElementById("awardsText3").style.opacity = "1"
+                // }
                 if(progress > 315){
                     const pos = progress - 300
                     const logo = document.getElementById("logoAnimado")

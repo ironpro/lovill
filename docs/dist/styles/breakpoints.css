@@ -1,7 +1,23 @@
 /*! locomotive-scroll v3.3.12 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media (orientation: portrait) {
+  .por::before {
+    content: "Portrait";
+    width: 100vw;
+    height: 40px;
+    color: white;
+    background-color: green; } }
+
+@media (orientation: landscape) {
+  .por::before {
+    content: "Landscape";
+    width: 100vw;
+    height: 40px;
+    color: white;
+    background-color: green; } }
+
+@media only screen and (min-width: 320px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .uno::before {
     content: "Portrait Mobile";
     width: 100vw;
@@ -16,6 +32,8 @@
     top: 0;
     left: 0;
     height: auto; }
+  .vdesktop {
+    display: none; }
   .segunda-seccion {
     min-height: 52vh; }
   .textos-segunda-seccion {
@@ -39,13 +57,13 @@
   .sexta-seccion {
     min-height: auto; }
   .title {
-    font-size: 18px;
+    font-size: 1.125em;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
     margin-bottom: 20px; }
   .mini-title {
-    font-size: 12px;
+    font-size: 0.75em;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
@@ -69,14 +87,15 @@
       line-height: 6px;
       vertical-align: middle; }
     .tercera-seccion .team-title-dedicated {
-      font-size: 16px;
+      font-size: 1em;
       margin-left: 100vw; }
     .tercera-seccion .texto-team {
       margin-top: 36px;
       margin-bottom: 124px;
       font-family: "Verdana";
-      font-size: 15px;
-      line-height: 23px; }
+      font-size: 0.938em;
+      line-height: 23px;
+      margin-left: auto; }
   .sexta-seccion .mobile {
     display: flex;
     justify-content: flex-start;
@@ -117,7 +136,7 @@
     max-width: 80vw;
     font-family: 'Verdana';
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.1em;
     letter-spacing: 7px;
     line-height: 25px; }
   .c-section_infos {
@@ -127,7 +146,7 @@
     .c-section_infos div {
       padding-bottom: 24px; }
     .c-section_infos p {
-      font-size: 16px; }
+      font-size: 1em; }
   .textos-footer {
     text-align: left;
     color: white;
@@ -179,13 +198,15 @@
   .rightShape {
     height: 19vh; } }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 1024px) {
   .circo::before {
     width: 100vw;
     height: 40px;
     color: white;
     background-color: blue;
-    content: "640px"; } }
+    content: "640px"; }
+  .texto-team {
+    margin-left: auto; } }
 
 @media (min-width: 768px) {
   .seis::before {
@@ -201,7 +222,9 @@
     height: 40px;
     color: white;
     background-color: blue;
-    content: "1024px"; } }
+    content: "1024px"; }
+  .textos-segunda-seccion {
+    width: 100%; } }
 
 @media (min-width: 1620px) {
   .ocho::before {
@@ -217,4 +240,11 @@
     height: 40px;
     color: white;
     background-color: blue;
-    content: "1920px"; } }
+    content: "1920px"; }
+  .super-left-line {
+    border-left: 50vw solid #5D5D5D;
+    margin-left: -20vw; }
+  .texto-team {
+    margin-left: 30vw; }
+  .backAnimado img {
+    min-width: 2200px; } }
